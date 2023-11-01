@@ -31,10 +31,11 @@ body {
     overflow: hidden;
 
     &::after {
-      position: absolute;
+      @include rgba($black,0.75);
       content: '';
       inset: 0;
-      @include rgba($black,0.75)
+      position: absolute;
+      z-index: $zindex--md;
     }
 
     @media only screen and (min-width: 992px) {
