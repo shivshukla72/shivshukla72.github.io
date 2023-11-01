@@ -1,0 +1,32 @@
+/* ==========  Color Variables =========== */ 
+
+:root {
+    --primary-color: #8DB9CA;
+    --heading-color: #221F20;
+    --body-text: #221F20;
+    --body-bg: #FFFFFF;
+}
+
+$primary-color: var(--primary-color);
+$heading-color: var(--heading-color);
+$body-text: var(--body-text);
+$body-bg: var(--body-bg); 
+$air-blue: #659AB1;
+$anti-flash-white: #EFF5F7;
+$black: #000000;
+$carolina-blue: #84AEC1;
+$flash-white: #F3F7F9;
+$gold: #FED103;
+$green: #285C4D;
+$imperial-red: #F24343;
+$indigo-dye: #00416C;
+$jet: #383838;
+$naples-yellow: #F0D563;
+$penn-blue: #02205C;
+$platinum: #EAEAEA;
+$sea-salt: #F6F6F6;
+$silver: #CACCCE;
+$sky-blue: #8DB9CA;
+$verdigris: #6BBBAE;
+$vermilion: #E63E30;
+$white: #FFFFFF;

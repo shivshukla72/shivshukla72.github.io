@@ -1,0 +1,197 @@
+.pr-bs {
+    padding: 45px 0;
+
+    @media only screen and (min-width: $md-screen) {
+        padding: 75px 0;
+    }
+}
+
+.pr-bs__head {
+    margin: 0 auto 30px;
+    max-width: 300px;
+    text-align: center;
+
+    @media only screen and (min-width: $md-screen) {
+        margin: 0 auto 50px;
+    }
+
+    .pr-bs__mini-title {
+        font-family: $fm-js-b;
+        font-size: $fs-body-sm;
+        letter-spacing: 1.2px;
+        line-height: $lh-body-sm;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+    }
+
+    .pr-bs__title {
+        font-family: $fm-bc-b;
+        font-size: $fs-heading-md;
+        line-height: $lh-heading-md;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+}
+
+.pr-bs__product-row {
+    margin: 0 -10px;
+    position: relative;
+}
+
+.pr-bs__product-card {
+    margin: 0 10px 30px 10px;
+    max-width: 300px;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    width: 100%;
+
+    &:hover {
+        border-radius: 12px;
+        box-shadow: 0px 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .pr-bs__product-img {
+        background-color: $sea-salt;
+        max-height: 295px;
+        overflow: hidden;
+        padding: 10px 0;
+        position: relative;
+
+        .pr-bs__product-tag {
+            color: $white;
+            display: inline-block;
+            font-family: $fm-nunito-b;
+            font-size: 11px;
+            left: 0;
+            letter-spacing: 1.1px;
+            line-height: $fs-body-sm;
+            padding: 5px 10px; 
+            position: absolute;
+            text-transform: uppercase;
+            top: 15px;
+            transform: rotate(-90deg);
+
+            &.tag--sale {
+                background-color: $vermilion;
+            }
+
+            &.tag--new {
+                background-color: $verdigris;
+            }
+
+            &.tag--back {
+                background-color: $sky-blue;
+                left: -30px;
+                top: 48px;
+            }
+        }
+
+        .pr-bs__product-img-wrap {
+            margin: 0 auto;
+            max-width: 200px;
+            width: 100%;
+        } 
+    }
+
+    .pr-bs__product-details {
+        padding: 15px 12px;
+
+        .pr-bs__product-review {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 14px;
+
+            .pr-bs__product-review-icon {
+                display: inline-block;
+            }
+        }
+
+        .pr-bs__product-name {
+            font-family: $fm-js-b;
+            font-size: $fs-body-sm;
+            line-height: $lh-body-sm;
+            margin-bottom: 10px;
+            min-height: 35px;
+            text-transform: uppercase;
+        }
+
+        .pr-bs__product-price {
+            display: inline-block;
+            font-size: $fs-body-sm;
+            line-height: $lh-body-sm;
+            margin-bottom: 14px;
+
+            del {
+                color: $silver;
+                margin-left: 4px;
+            }
+        }
+
+        .pr-bs__product-color {
+            display: flex;
+            gap: 8px;
+
+            .pr-bs__product-color-wrap {
+                display: inline-block;
+                height: 24px; 
+                position: relative;
+                width: 24px;
+
+                input[type='radio'] {
+                    height: 0;
+                    visibility: hidden;
+                    width: 0;
+                }
+            }
+
+            .pr-bs__product-color-custom {
+                border-radius: 50%;
+                border: 1px solid transparent;
+                cursor: pointer;
+                display: inline-block;
+                height: 22px;
+                inset: 0;
+                position: absolute;
+                transition: all 0.1s linear;
+                width: 22px;
+            }
+
+            .pr-bs__product-color-custom.selected {
+                border: 2px solid $white;
+                box-shadow: 0 0 0 1px $heading-color;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+/* ------ Slick Slider CSS  ------ */
+
+.pr-bs__product-slider-icon {
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba($black,0.14);
+    cursor: pointer;
+    display: inline-block;
+    height: 46px;
+    padding: 9px 6px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(calc(-50% - 100px));
+    width: 46px;
+    z-index: $zindex--md;
+
+    &.prev-icon {
+        left: 10px;
+    }
+
+    &.next-icon {
+        right: 10px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}

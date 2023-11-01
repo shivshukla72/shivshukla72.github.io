@@ -1,0 +1,12 @@
+.pr-announcement-bar {
+    background-color: $primary-color;
+    color: $white;
+    font-family: $fm-js-b;
+    font-size: $fs-body-sm;
+    line-height: $lh-body-sm;
+    padding: 12px 15px;
+    position: relative;
+    text-align: center;
+    z-index: $zindex--lg;
+}
+ 

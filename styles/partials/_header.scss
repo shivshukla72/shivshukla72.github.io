@@ -1,0 +1,200 @@
+.pr-header {
+    background-color: $white;
+    padding: 14px 0;
+    position: relative;
+    transition: all 0.3s linear;
+    z-index: $zindex--lg;
+
+    &.sticky {
+        backdrop-filter: blur(12px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: $zindex--lg;
+
+        @media only screen and (min-width: $lg-screen) {
+            -webkit-backdrop-filter: blur(12px);
+            @include rgba($white,0.5);  
+        }
+    }
+}
+
+.pr-header__row {
+    gap: 10px;
+
+    .pr-header__menu {
+        flex: 0 0 100%;
+        @media only screen and (min-width: $lg-screen) {
+            gap: 50px;
+        }
+        
+        &.menu--first {
+            max-width: 100%;
+            position: absolute;
+        }
+
+        &.menu--second {
+            max-width: 150px;
+        }
+
+        @media only screen and (min-width: $lg-screen) {
+            &.menu--first {
+                display: block !important; // use important to overwrite the js.
+                position: static;
+            }
+
+            &.menu--first,
+            &.menu--second  {
+                max-width: calc(45% - 10px);
+            }
+        }
+    }
+      
+    .pr-header__logo {
+        flex: 0 0 100%;
+        max-width: calc(100% - 210px);
+
+        @media only screen and (min-width: $lg-screen) {
+            max-width: 10%;   
+        }
+
+        .pr-header__logo-wrap {
+            max-width: 100px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.pr-header__menu {
+    .pr-header__menu-item {
+        
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 12px 15px;
+            border-bottom: 1px solid $silver;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            
+        }
+    }
+
+    .pr-header__menu-link {
+        font-size: $fs-body-sm;
+        line-height: $lh-body-sm;
+        font-family: $fm-js-b;
+        color: $heading-color;
+        letter-spacing: 1.95px;
+        text-transform: uppercase;
+    }
+
+    .pr-header__icon-box {
+        gap: 20px;
+
+        img {
+            max-width: 24px;
+        }
+
+        .pr-header__icon--search,
+        .pr-header__icon--account {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+        }
+
+        .pr-header__icon--bag {
+            max-width: 55px;
+        }
+
+        .pr-header__bag-count {
+            @include rgba(#659AB1,0.3);
+            border-radius: 50%;
+            display: inline-block;
+            font-size: $fs-body-sm;
+            color: $heading-color;
+            height: 24px;
+            line-height: 1;
+            padding: 6px;
+            text-align: center;
+            margin-left: 5px;
+            width: 24px;
+        }
+    }
+}
+
+.pr-header__menu {
+    &.mobile-navigation {
+        background-color: $flash-white;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        z-index: $zindex--lg;
+        display: none;
+    }
+
+    @media only screen and (max-width: 991px) {
+        #pr-header__nav--first,
+        #pr-header__nav--second {
+            display: none;
+            height: 0;
+        }
+
+        &.mobile-navigation {
+            #pr-header__nav--first,
+            #pr-header__nav--second {
+                display: block;
+                height: auto;
+            }    
+        }
+    }
+
+}
+
+/* ======== Mobile Toggle ======= */
+
+.pr-header__mobile-toggle {
+    display: inline-block;
+    cursor: pointer;
+    
+    @media only screen and (min-width: $lg-screen) {
+        display: none;
+    }
+
+    .bar1, 
+    .bar2, 
+    .bar3 {
+        width: 32px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $heading-color;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      &.change {
+        .bar1 {
+            transform: translate(0, 8px) rotate(-45deg);
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            transform: translate(0, -8px) rotate(45deg);
+          }
+        
+      }
+}
+
+

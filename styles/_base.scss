@@ -1,0 +1,98 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+* {
+  word-break: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+p {
+  color: $body-text;
+  font-family: $fm-nunito-reg;
+  font-size: $fs-body-xl;
+  line-height: $lh-body-xl;
+}
+
+body {
+  background-color: $body-bg;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &.menu--open {
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      content: '';
+      inset: 0;
+      @include rgba($black,0.75)
+    }
+
+    @media only screen and (min-width: 992px) {
+      overflow: unset;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.pr-homepage {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0 0 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.no-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus,
+input:hover {
+  outline: none;
+}
+
+.bg--silver {
+  background-color: $silver;
+}
+
+.bg--raisin-black {
+  background-color: $heading-color;
+}
+
+.bg--green {
+  background-color: $green;
+}

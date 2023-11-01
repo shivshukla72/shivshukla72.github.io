@@ -1,0 +1,191 @@
+.pr-footer {
+    padding: 50px 0 20px;
+    background-color: $air-blue;
+}
+
+.pr-footer__row {
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right, $white 10%, rgba($white, 0) 0%);
+    background-position: bottom;
+    background-size: 20px 2px;
+    background-repeat: repeat-x;
+
+    @media only screen and (min-width: $lg-screen) {
+        padding-bottom: 40px;
+    }
+
+    .pr-footer__col--left {
+        margin-bottom: 15px;
+
+        @media only screen and (min-width: $md-screen) {
+            padding-right: 15px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pr-footer__content {
+    max-width: 400px;
+
+    .pr-footer__title {
+        font-size: $fs-heading-xs;
+        line-height: $lh-heading-xs;
+        font-family: $fm-bc-b;
+        letter-spacing: 0.72px;
+        color: $white;
+    }
+
+    .pr-footer__desc {
+        font-size: $fs-body-xl;
+        line-height: $lh-body-xl;
+        color: $anti-flash-white;
+    }
+}
+
+.pr-footer__form {
+    padding: 15px;
+    background-color: $carolina-blue;
+    border-radius: 6px;
+
+    @media only screen and (min-width: $lg-screen) {
+        padding: 17px 30px;
+    }
+
+    .pr-footer__form-grp {
+        grid-template-columns: 70% calc(30% - 10px);
+        gap: 10px;
+
+        input[type=email] {
+            width: 100%;
+            background: transparent;
+            color: white;
+            border: none;
+
+            &:focus,
+            &:hover {
+                border: none;
+                outline-color: transparent;
+            }
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        .pr-footer__form-btn--signup {
+            display: inline-block;
+            background: transparent;
+            border: none;
+            font-size: $fs-body-sm;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            line-height: $lh-body-sm;
+            font-family: $fm-js-b,sans-serif;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    } 
+}
+
+
+.pr-footer__navigation {
+    padding: 45px 0 20px;
+
+    @media only screen and (min-width: $lg-screen) {
+        padding: 55px 0 70px;
+    }
+
+    .pr-footer__logo {
+        max-width: 200px;
+        margin-bottom: 40px;
+    }
+    
+    .pr-footer__company-details {
+        .pr-footer__company-tag,
+        .pr-footer__company-mail,
+        .pr-footer__company-num {
+            display: block;
+            font-size: $fs-body-md;
+            line-height: $lh-body-md;
+            margin-bottom: 5px;
+            color: $white;
+        }
+    
+        .pr-footer__company-tag {
+            font-family: $fm-nunito-b;
+        }
+    }
+    
+    .pr-footer__sub-title {
+        font-size: $fs-body-md;
+        line-height: $lh-body-md;
+        font-family: $fm-js-b;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    
+    .pr-footer__menu {
+        .pr-footer__menu-link {
+            display: block;
+            font-size: $fs-body-md;
+            line-height: $lh-body-md;
+            color: $anti-flash-white;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+    }
+
+   .pr-footer__social {
+        @media only screen and (max-width: 767px) {
+            padding-top: 30px;
+            background-image: linear-gradient(to right, $white 10%, rgba($white, 0) 0%);
+            background-position: top;
+            background-size: 20px 2px;
+            background-repeat: repeat-x;
+        }
+
+
+        .pr-footer__social-icon-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: $carolina-blue;
+            border-radius: 50%;
+            text-align: center;
+            padding: 6px;
+            transition: all 0.3s ease-in;
+
+            &:hover {
+                background-color: $anti-flash-white;
+
+                svg path {
+                    fill: $primary-color;
+                }
+            }
+
+            &:not(:last-child) {
+                margin: 0 10px 10px 0;
+            }
+        }
+   }
+}
+
+.pr-footer__bottom {
+    .pr-footer__copywrite-text,
+    .pr-footer__links {
+        font-size: $fs-body-md;
+        line-height: $lh-body-md;
+        color: $anti-flash-white;
+    }
+
+    .pr-footer__links {
+        text-transform: capitalize;
+    }
+}
+
+

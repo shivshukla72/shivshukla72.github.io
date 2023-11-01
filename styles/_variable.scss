@@ -1,0 +1,14 @@
+/* ===== Define breakpoints for different screen sizes ====*/
+
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1024px;
+
+/* ====== Define variables for managing z-index values  =====*/ 
+
+$zindex--xl: 9999;
+$zindex--lg: 999;
+$zindex--md: 99;
+$zindex--sm: 9;
+$zindex--xs: -9

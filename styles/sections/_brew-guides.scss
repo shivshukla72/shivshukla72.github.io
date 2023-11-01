@@ -1,0 +1,124 @@
+.pr-tc {
+    padding: 45px 0;
+
+    @media only screen and (min-width: $md-screen) {
+        padding: 75px 0;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+        padding: 140px 0 75px;
+    }
+}
+
+.pr-tc__row {
+    align-items: center;
+    display: grid;
+    gap: 90px;
+
+    @media only screen and (min-width: $md-screen) {
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+        gap: 50px;
+    }
+
+    .pr-tc__mini-title {
+        font-family: $fm-js-b;
+        font-size: $fs-body-sm;
+        letter-spacing: 1.2px;
+        line-height: $lh-body-sm;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    .pr-tc__title {
+        font-family: $fm-bc-b;
+        font-size: $fs-heading-xs;
+        line-height: $lh-heading-xs;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: $md-screen) {
+            font-size: $fs-heading-md;
+            line-height: $lh-heading-md;
+        }
+    }
+
+    .pr-tc__desc {
+        margin-bottom: 8px;
+    }
+
+    .pr-tc__btn {
+        background-color: transparent;
+        border-radius: 32px;
+        border: 1px solid $heading-color;
+        color: $heading-color;
+        display: inline-block;
+        font-family: $fm-js-b;
+        font-size: $fs-body-sm;
+        letter-spacing: 1.2px;
+        line-height: $lh-body-sm;
+        max-width: 180px;
+        padding: 17px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+    }
+
+    .pr-tc__img {
+        margin-bottom: 40px;
+        max-width: 95%;
+        position: relative;
+
+        &:before {
+            background-color: $primary-color;
+            bottom: -25px;
+            content: '';
+            height: 100%;
+            position: absolute;
+            right: -25px;
+            width: 100%;
+            z-index: $zindex--xs;
+
+            @media only screen and (min-width: $md-screen) {
+                margin-bottom: 0;
+            }
+
+            @media only screen and (min-width: $lg-screen) {
+                bottom: -35px;
+                right: -35px;
+            }
+        }
+
+        .pr-tc__brew-tag {
+            display: inline-block;
+            height: 145px;
+            position: absolute;
+            right: 0;
+            top: -80px;
+            width: 145px;
+
+            @media only screen and (min-width: $xl-screen) {
+                right: -40px;
+            }
+        }
+
+        .pr-tc__img-brew {
+            @media only screen and (min-width: $md-screen) {
+               height:350px;
+            }
+
+            @media only screen and (min-width: $lg-screen) {
+                height: 420px;
+            }
+        }
+    }
+}

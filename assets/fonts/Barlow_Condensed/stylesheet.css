@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('BarlowCondensed-Bold.eot');
+    src: url('BarlowCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BarlowCondensed-Bold.woff2') format('woff2'),
+        url('BarlowCondensed-Bold.woff') format('woff'),
+        url('BarlowCondensed-Bold.svg#BarlowCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('BarlowCondensed-Black.eot');
+    src: url('BarlowCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('BarlowCondensed-Black.woff2') format('woff2'),
+        url('BarlowCondensed-Black.woff') format('woff'),
+        url('BarlowCondensed-Black.svg#BarlowCondensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('BarlowCondensed-ExtraBold.eot');
+    src: url('BarlowCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('BarlowCondensed-ExtraBold.woff2') format('woff2'),
+        url('BarlowCondensed-ExtraBold.woff') format('woff'),
+        url('BarlowCondensed-ExtraBold.svg#BarlowCondensed-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('BarlowCondensed-SemiBold.eot');
+    src: url('BarlowCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('BarlowCondensed-SemiBold.woff2') format('woff2'),
+        url('BarlowCondensed-SemiBold.woff') format('woff'),
+        url('BarlowCondensed-SemiBold.svg#BarlowCondensed-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

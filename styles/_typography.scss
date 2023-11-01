@@ -1,0 +1,129 @@
+/* ========================================*/ 
+/*        Font Family Barlow Condensed     */
+/* ========================================*/ 
+
+@font-face {
+    font-family: 'Barlow Condensed Black';
+    font-weight: 900;
+    font-display: swap;
+    src: url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Black.ttf),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Black.svg),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Black.woff),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Black.woff2);
+}
+
+@font-face {
+    font-family: 'Barlow Condensed ExtraBold';
+    font-weight: 800;
+    font-display: swap;
+    src: url(../assets/fonts/Barlow_Condensed/BarlowCondensed-ExtraBold.ttf),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-ExtraBold.svg),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-ExtraBlack.woff),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: 'Barlow Condensed Bold';
+    font-weight: 700;
+    font-display: swap;
+    src: url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.svg),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.woff),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Barlow Condensed SemiBold';
+    font-weight: 600;
+    font-display: swap;
+    src: url(../assets/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.svg),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-SemiBlack.woff),
+        url(../assets/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.woff2);
+}
+
+/* =======================================*/ 
+/*       Font Family Josefin Sans        */
+/* ======================================*/ 
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    font-display: swap;
+    font-weight: 700;
+    src: url(../assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf),
+        url(../assets/fonts/Josefin_Sans/JosefinSans-Bold.svg),
+        url(../assets/fonts/Josefin_Sans/JosefinSans-Bold.woff),
+        url(../assets/fonts/Josefin_Sans/JosefinSans-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Josefin Sans Regular';
+    font-display: swap;
+    font-weight: 400;
+    src: url(../assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf),
+        url(../assets/fonts/Josefin_Sans/JosefinSans-Regular.svg),
+        url(../assets/fonts/Josefin_Sans/JosefinSans-Regular.woff),
+        url(../assets/fonts/Josefin_Sans/JosefinSans-Regular.woff2);
+}
+
+/* =====================================*/ 
+/*          Font Family Nunito          */
+/* =====================================*/ 
+
+@font-face {
+    font-family: 'Nunito Bold';
+    font-display: swap;
+    font-weight: 700;
+    src: url(../assets/fonts/Nunito/Nunito-Bold.ttf),
+    url(../assets/fonts/Nunito/Nunito-Bold.woff),
+    url(../assets/fonts/Nunito/Nunito-Bold.svg),
+    url(../assets/fonts/Nunito/Nunito-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Nunito Regular';
+    font-display: swap;
+    font-weight: 400;
+    src: url(../assets/fonts/Nunito/Nunito-Regular.ttf),
+    url(../assets/fonts/Nunito/Nunito-Regular.woff),
+    url(../assets/fonts/Nunito/Nunito-Regular.woff2),
+    url(../assets/fonts/Nunito/Nunito-Regular.svg);
+}
+
+/* ======== Define font family variables ======= */ 
+
+$fm-bc-bl: 'Barlow Condensed Black';
+$fm-bc-eb: 'Barlow Condensed ExtraBold';
+$fm-bc-b: 'Barlow Condensed Bold';
+$fm-bc-sm: 'Barlow Condensed SemiBold';
+$fm-js-b: 'Josefin Sans Bold';
+$fm-js-reg: 'Josefin Sans Regular';
+$fm-nunito-b: 'Nunito Bold';
+$fm-nunito-reg: 'Nunito Regular';
+
+
+/* ======== Define font size variables ======== */ 
+
+$fs-heading-xl: 78px;
+$fs-heading-lg: 48px;
+$fs-heading-md: 40px;
+$fs-heading-sm: 36px;
+$fs-heading-xs: 28px;
+$fs-body-xl: 18px;
+$fs-body-lg: 16px;
+$fs-body-md: 14px;
+$fs-body-sm: 12px;
+
+
+/* ======== Define line height variables ======= */ 
+
+$lh-heading-xl: 94px;
+$lh-heading-lg: 52px;
+$lh-heading-md: 48px;
+$lh-heading-sm: 44px;
+$lh-heading-xs: 36px;
+$lh-body-xl: 28px;
+$lh-body-lg: 24px;
+$lh-body-md: 21px;
+$lh-body-sm: 18px;
+

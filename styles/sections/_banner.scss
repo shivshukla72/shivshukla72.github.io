@@ -1,0 +1,177 @@
+.pr-banner {
+    background-image: url(../assets/images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 0;
+    position: relative;
+
+    @media only screen and (min-width: $md-screen) {
+        padding: 70px 0;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+        padding: 110px 0 175px;
+    }
+}
+
+.pr-banner__content {
+    display: inline-block;
+    overflow: hidden;
+
+    .pr-banner__content-wrap {
+        background-color: $indigo-dye;
+        border-radius: 0 50px 50px 0;
+        max-width: 630px;
+        padding: 30px 20px 30px 40px;
+        position: relative;
+        width: 100%;
+    
+        &::before {
+            border-bottom: 70px solid $indigo-dye;
+            border-right: 70px solid transparent;
+            content: '';
+            height: 0;
+            position: absolute;
+            right: -22px;
+            top: -22px;
+            width: 0;
+        } 
+        
+        &::after {
+            border-right: 70px solid transparent;
+            border-top: 70px solid $indigo-dye;
+            bottom: -22px;
+            content: '';
+            height: 0;
+            position: absolute;
+            right: -22px;
+            width: 0;
+        }
+    
+        @media only screen and (min-width: $md-screen) {
+            padding: 27px 38px 38px 75px;
+        }
+    
+        .pr-banner__content-indicator--triangle {
+            -webkit-clip-path: polygon(100% 45%, 0 0, 0 100%);
+            background-color: $gold;
+            clip-path: polygon(100% 45%, 0 0, 0 100%);
+            content: '';
+            height: 112px;
+            left: 0;
+            position: absolute;
+            top: 65px;
+            width: 30px;                                                                                                                             
+    
+            @media only screen and (min-width: $md-screen) {
+                width: 56px;
+            }
+        }
+    
+        .pr-banner__title {
+            color: $white;
+            font-family: $fm-bc-eb;
+            font-size: $fs-heading-lg;
+            line-height: $lh-heading-lg;
+            text-transform: uppercase; 
+        
+            @media only screen and (min-width: $md-screen) {
+                font-size: $fs-heading-xl;
+                line-height: $lh-heading-xl;
+            }
+    
+            span {
+                display: block;
+            }
+        }
+        
+        .pr-banner__desc {
+            font-size: $fs-body-md;
+            line-height: $lh-body-md;
+            color: $white;
+            margin-bottom: 20px;
+    
+            @media only screen and (min-width: $md-screen) {
+                margin-bottom: 34px;
+            }
+        }
+    }
+}
+
+.pr-banner__btn-wrap {
+    gap: 20px;
+
+    @media only screen and (min-width: $md-screen) {
+        gap: 50px;
+    }
+
+    .pr-banner__btn {
+        .pr-banner__btn-text {
+            position: relative;
+            z-index: $zindex--md;
+        }   
+
+        &:nth-child(1) {
+            @include button($vermilion,$white,$vermilion,$gold,$indigo-dye);
+        }
+    
+        &:nth-child(2) {
+            @include button($vermilion,$white,$white,$white,$vermilion);
+
+            &::before,
+            &::after {
+               background-color:transparent;
+            }
+        }
+    }
+}
+
+.pr-banner__btn--explore {
+    align-items: center;
+    bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+
+    @media only screen and (min-width: $md-screen) {
+        bottom: 20px;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+        bottom: 30px;
+    }
+
+    &:hover {
+        .pr-banner__btn--explore-text {
+            color: $primary-color;
+        }
+
+        .pr-banner__btn--explore-icon svg path {
+            fill: $primary-color;
+        }
+    }
+
+    .pr-banner__btn--explore-text {
+        color: $white;
+        display: inline-block;
+        font-family: $fm-js-b;
+        font-size: $fs-body-md;
+        letter-spacing: 2.1px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+    .pr-banner__btn--explore-icon {
+        display: inline-block;
+        padding-top: 10px;
+
+        svg {
+            vertical-align: top;
+        }
+    }
+}
